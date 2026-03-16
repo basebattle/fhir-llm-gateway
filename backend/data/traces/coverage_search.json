@@ -1,0 +1,10 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://api.medplum.com/fhir/R4/Coverage?_count=5"
+    }
+  ]
+}
