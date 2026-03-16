@@ -5,7 +5,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 import httpx
 
-load_dotenv()
+DOTENV_PATH = Path(__file__).parent.parent.parent / ".env"
+load_dotenv(dotenv_path=DOTENV_PATH)
 
 FHIR_MODE = os.getenv("FHIR_MODE", "static")
 MEDPLUM_BASE_URL = os.getenv("MEDPLUM_BASE_URL", "https://api.medplum.com/fhir/R4")
