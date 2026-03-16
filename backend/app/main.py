@@ -19,8 +19,8 @@ app.add_middleware(
 )
 
 # Import and include routes (will be built in Prompt 3)
-# from app.api.routes import router
-# app.include_router(router)
+from app.api.routes import router
+app.include_router(router)
 
 @app.get("/health")
 async def health():
